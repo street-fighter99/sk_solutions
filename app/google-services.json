@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "121883398727",
+    "firebase_url": "https://sk-solution.firebaseio.com",
+    "project_id": "sk-solution",
+    "storage_bucket": "sk-solution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121883398727:android:8516b5ac2b925e83a09762",
+        "android_client_info": {
+          "package_name": "com.example.sk_solutions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121883398727-ukd0ausfgsmingdh7g1qte1tp6jf3s3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sk_solutions",
+            "certificate_hash": "48702aa7b8ac3213a5cfb66ccfe747484fb76da6"
+          }
+        },
+        {
+          "client_id": "121883398727-qmmji2c4alun1a2i42h5a3q4tfateo3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9F7gvYlJztO953w32mZtGTQT1VjErrAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121883398727-qmmji2c4alun1a2i42h5a3q4tfateo3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
