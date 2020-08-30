@@ -30,7 +30,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="100dp"
-            android:shadowRadius="15dp"
             android:text="One Time Password"
             android:textColor="#000"
             android:textSize="20dp">
