@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
                    new Handler().postDelayed(new Runnable() {
                        @Override
                        public void run() {
-                           startActivity(new Intent(getApplicationContext(),mainhome.class));
+                           startActivity(new Intent(getApplicationContext(),enter_phone_number.class));
                       finish();
                        }
                    },4000);
                 }else{
 
-        startActivity(new Intent(getApplicationContext(), verifyotp.class));
+        startActivity(new Intent(getApplicationContext(), enter_phone_number.class));
         finish();
         }
 

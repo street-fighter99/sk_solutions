@@ -32,6 +32,7 @@ String verificationCodeBySystem;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verifyotp);
+
     vBttn=findViewById(R.id.submitbttn);
     otpcode=findViewById(R.id.otptxt);
         progress=findViewById(R.id.prograssbar);
@@ -41,7 +42,7 @@ String verificationCodeBySystem;
     }
     private void sendVerificationCodeToUser(String phoneno){
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                "91"+phoneno,        // Phone number to verify
+                "+91"+phoneno,        // Phone number to verify
                 60,                 // Timeout duration
                 TimeUnit.SECONDS,   // Unit of timeout
                 TaskExecutors.MAIN_THREAD,               // Activity (for callback binding)

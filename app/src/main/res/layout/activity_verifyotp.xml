@@ -5,72 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".verifyotp"
-    android:background="@drawable/otpbackgroud">
-<androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="340dp"
-   android:id="@+id/cardVie"
-    android:layout_marginBottom="20dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="20dp"
-    app:cardMaxElevation="30dp"
-    android:outlineSpotShadowColor="#000"
-    >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    android:background="@drawable/otp">
 
-        <TextView
-            android:id="@+id/onrtime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="100dp"
-            android:text="One Time Password"
-            android:textColor="#000"
-            android:textSize="20dp">
 
-        </TextView>
+    <TextView
+        android:id="@+id/onrtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bangers"
+        android:text="One Time Password"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/otptxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-        <EditText
-            android:id="@+id/otptxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:background="@drawable/outline"
+    </TextView>
 
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
+    <EditText
+        android:id="@+id/otptxt"
+        android:layout_width="356dp"
+        android:layout_height="46dp"
+        android:background="@drawable/outline"
+        android:gravity="center"
+        android:textSize="20dp"
 
-        </EditText>
-        <Button
-            android:id="@+id/submitbttn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/button"
-            android:text="submit"
-            android:textColor="#fff"
-            android:textStyle="bold|italic"
-            android:textSize="19dp"
-            android:layout_marginTop="70dp">
+        app:layout_constraintBottom_toTopOf="@+id/submitbttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882">
 
-        </Button>
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            android:id="@+id/prograssbar"
-            >
+    </EditText>
 
-        </ProgressBar>
+    <Button
+        android:id="@+id/submitbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:text="submit"
+        android:textColor="#fff"
+        android:textSize="19dp"
+        android:fontFamily="@font/bangers"
+        android:outlineSpotShadowColor="#000"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802">
 
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+    </Button>
+
+    <ProgressBar
+        android:id="@+id/prograssbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitbttn"
+        app:layout_constraintVertical_bias="0.471">
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="342dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bangers"
+        android:text="Enter your OTP"
+        android:textColor="#ACACAC"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/onrtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
