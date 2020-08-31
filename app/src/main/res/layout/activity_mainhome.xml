@@ -1,9 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.drawerlayout.widget.DrawerLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".mainhome">
+    android:id="@+id/drawablelayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2DFDB"
+        android:orientation="vertical"
+        tools:context=".mainhome"
+        android:fitsSystemWindows="true"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="3">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        android:clickable="true"
+                        android:elevation="20dp"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#CBEFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="NOTIFICATION"
+                            android:textColor="#000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginBottom="-50dp"
+                            android:src="@drawable/notification">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        android:clickable="true"
+                        android:elevation="20dp"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#CBEFFF"
+                        app:cardCornerRadius="16sp"
+                        app:cardElevation="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="PANCHAYATH"
+                            android:textColor="#000000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginBottom="-50dp"
+                            android:src="@drawable/panchayarh"></ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        android:clickable="true"
+                        android:elevation="20dp"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#CBEFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="MEDICALS"
+                            android:textColor="#000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginBottom="-50dp"
+                            android:src="@drawable/ambulance">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        android:clickable="true"
+                        android:elevation="20dp"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#CBEFFF"
+                        app:cardCornerRadius="16sp"
+                        app:cardElevation="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="LOCAL SERVICES"
+                            android:textColor="#000000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginBottom="-50dp"
+                            android:src="@drawable/taxi"></ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        android:clickable="true"
+                        android:elevation="20dp"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#CBEFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="APPLY ONLINE"
+                            android:textColor="#000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginBottom="-50dp"
+                            android:src="@drawable/monitor">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        android:clickable="true"
+                        android:elevation="20dp"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#CBEFFF"
+                        app:cardCornerRadius="16sp"
+                        app:cardElevation="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="PDF dOWNLOAD"
+                            android:textColor="#000000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginBottom="-50dp"
+                            android:src="@drawable/pdf"></ImageView>
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/naviationView"
+        app:menu="@menu/main_menu"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

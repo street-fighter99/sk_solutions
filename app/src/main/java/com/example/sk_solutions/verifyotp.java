@@ -33,6 +33,7 @@ String verificationCodeBySystem;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verifyotp);
 
+
     vBttn=findViewById(R.id.submitbttn);
     otpcode=findViewById(R.id.otptxt);
         progress=findViewById(R.id.prograssbar);

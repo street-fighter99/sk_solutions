@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".verifyotp"
-    android:background="@drawable/otp">
+    android:background="#2FBBFA">
 
 
     <TextView
@@ -33,7 +33,8 @@
         android:background="@drawable/outline"
         android:gravity="center"
         android:textSize="20dp"
-
+        android:textAlignment="center"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/submitbttn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
@@ -83,9 +84,10 @@
         android:layout_width="342dp"
         android:layout_height="176dp"
         android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
         android:fontFamily="@font/bangers"
         android:text="Enter your OTP"
-        android:textColor="#ACACAC"
+        android:textColor="#FFFFFF"
         android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/onrtime"
         app:layout_constraintEnd_toEndOf="parent"

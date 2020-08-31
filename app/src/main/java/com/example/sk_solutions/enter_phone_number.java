@@ -17,6 +17,7 @@ EditText phone;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_phone_number);
 
+
         otpbttn=findViewById(R.id.generatebttn);
         phone=findViewById(R.id.phonenumber);
 
