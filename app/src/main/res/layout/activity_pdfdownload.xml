@@ -33,9 +33,9 @@
         app:layout_constraintVertical_bias="0.935">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="77dp"
+            android:layout_width="wrap_content"
             android:id="@+id/mainaction"
-            android:layout_height="78dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
             android:layout_margin="20dp"
             android:backgroundTint="#673AB7"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#673AB7"
-
+        app:fabSize="mini"
         android:clickable="true"
         android:src="@drawable/searchicon"
         app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
@@ -66,6 +66,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#673AB7"
         android:clickable="true"
+        app:fabSize="mini"
         android:src="@drawable/plusbutton"
         app:layout_constraintBottom_toTopOf="@+id/searchaction"
         app:layout_constraintEnd_toEndOf="parent"

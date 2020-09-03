@@ -16,7 +16,7 @@ public class pdfdownload extends AppCompatActivity {
 FloatingActionButton mainactionbttn,addactionbttn,searchactionbttn;
 TextView searchtxt,additemtxt;
 private boolean isOpen;
-private Animation openAnime,closeAnime;
+private Animation openAnime,closeAnime,rotation,backrotation;
 
 
     @Override
@@ -42,6 +42,8 @@ private Animation openAnime,closeAnime;
         //connection of animation
         openAnime= AnimationUtils.loadAnimation(pdfdownload.this,R.anim.open_action_fab);
         closeAnime=AnimationUtils.loadAnimation(pdfdownload.this,R.anim.close_action_fab);
+        rotation=AnimationUtils.loadAnimation(pdfdownload.this,R.anim.rotation);
+        backrotation=AnimationUtils.loadAnimation(pdfdownload.this,R.anim.back_rotation);
 
 
         //set actions to the main FAB button
@@ -58,6 +60,7 @@ private Animation openAnime,closeAnime;
                 if(isOpen){
                     searchactionbttn.setAnimation(closeAnime);
                     addactionbttn.setAnimation(closeAnime);
+                    mainactionbttn.setAnimation(rotation);
                     additemtxt.setVisibility(view.INVISIBLE);
                     searchtxt.setVisibility(view.INVISIBLE);
 
@@ -68,6 +71,7 @@ private Animation openAnime,closeAnime;
                 }else{
                     searchactionbttn.setAnimation(openAnime);
                     addactionbttn.setAnimation(openAnime);
+                    mainactionbttn.setAnimation(backrotation);
                     additemtxt.setVisibility(view.VISIBLE);
                     searchtxt.setVisibility(view.VISIBLE);
                     isOpen=true;
