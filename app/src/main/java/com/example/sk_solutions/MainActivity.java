@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
 
 
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                    new Handler().postDelayed(new Runnable() {
                        @Override
                        public void run() {
-                           startActivity(new Intent(getApplicationContext(),enter_phone_number.class));
+                           startActivity(new Intent(getApplicationContext(),mainhome.class));
                       finish();
                        }
                    },4000);

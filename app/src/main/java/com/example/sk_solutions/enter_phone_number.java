@@ -16,6 +16,7 @@ EditText phone;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_phone_number);
+        getSupportActionBar().hide();
 
 
         otpbttn=findViewById(R.id.generatebttn);

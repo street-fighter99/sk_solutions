@@ -32,7 +32,7 @@ String verificationCodeBySystem;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verifyotp);
-
+        getSupportActionBar().hide();
 
     vBttn=findViewById(R.id.submitbttn);
     otpcode=findViewById(R.id.otptxt);

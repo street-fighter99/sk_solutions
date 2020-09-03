@@ -2,28 +2,45 @@
 <androidx.drawerlayout.widget.DrawerLayout android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawablelayout"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mainhome"
+    tools:openDrawer="start">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_height="match_parent"
-        android:background="#B2DFDB"
         android:orientation="vertical"
+        android:background="#10A6EC"
         tools:context=".mainhome"
         android:fitsSystemWindows="true"
+
         >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/murback"
+
+
+            ></ImageView>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
 
                 <GridLayout
                     android:layout_width="match_parent"
@@ -40,6 +57,8 @@
                         android:clickable="true"
                         android:elevation="20dp"
                         android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/notify"
                         app:cardBackgroundColor="#CBEFFF"
                         app:cardCornerRadius="16dp"
                         app:cardElevation="20dp">
@@ -76,6 +95,7 @@
                         android:clickable="true"
                         android:elevation="20dp"
                         android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
                         app:cardBackgroundColor="#CBEFFF"
                         app:cardCornerRadius="16sp"
                         app:cardElevation="20dp">
@@ -108,8 +128,10 @@
                         android:layout_margin="15dp"
                         android:clickable="true"
                         android:elevation="20dp"
+                        android:foreground="?android:attr/selectableItemBackground"
                         android:focusable="true"
                         app:cardBackgroundColor="#CBEFFF"
+                        android:id="@+id/medical"
                         app:cardCornerRadius="16dp"
                         app:cardElevation="20dp">
 
@@ -145,6 +167,7 @@
                         android:clickable="true"
                         android:elevation="20dp"
                         android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
                         app:cardBackgroundColor="#CBEFFF"
                         app:cardCornerRadius="16sp"
                         app:cardElevation="20dp">
@@ -178,6 +201,7 @@
                         android:clickable="true"
                         android:elevation="20dp"
                         android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
                         app:cardBackgroundColor="#CBEFFF"
                         app:cardCornerRadius="16dp"
                         app:cardElevation="20dp">
@@ -214,6 +238,7 @@
                         android:clickable="true"
                         android:elevation="20dp"
                         android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
                         app:cardBackgroundColor="#CBEFFF"
                         app:cardCornerRadius="16sp"
                         app:cardElevation="20dp">
@@ -245,7 +270,7 @@
         </ScrollView>
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

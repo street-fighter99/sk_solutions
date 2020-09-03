@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medical"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="medical"
+        android:textColor="#000"
+        android:fontFamily="@font/bangers"
+        android:textSize="70dp"
+        android:gravity="center">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="3"
+            android:columnCount="2">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#F48FB1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bangers"
+                android:text="blood bank"
+                android:layout_gravity="top|left"
+                android:textColor="#000"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <ImageView
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom|right"
+
+                android:src="@drawable/blood">
+
+            </ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            app:cardBackgroundColor="#2194F1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bangers"
+                android:text="ambulance"
+                android:layout_gravity="start
+"
+                android:textColor="#000"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <ImageView
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+
+               android:layout_gravity="bottom|right"
+                android:src="@drawable/ambulance">
+
+            </ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:focusable="true"
+                android:id="@+id/coronaupdates"
+                app:cardBackgroundColor="#F6BB64"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/bangers"
+                    android:text="coronaUPdates"
+                    android:layout_gravity="top|left"
+                    android:textColor="#000"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom|right"
+
+                    android:src="@drawable/corona1">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:elevation="20dp"
+                android:focusable="true"
+                app:cardBackgroundColor="#90F694"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bangers"
+                    android:text="corona "
+                    android:layout_gravity="start"
+                    android:textColor="#000000"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/corona">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
