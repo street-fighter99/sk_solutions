@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class medical extends AppCompatActivity {
-    CardView updates;
+    CardView updates,bloodbank;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,15 @@ public class medical extends AppCompatActivity {
         getSupportActionBar().hide();
 
         updates=findViewById(R.id.coronaupdates);
+        bloodbank=findViewById(R.id.bloodbankcard);
+
+        bloodbank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),pdfdownload.class);
+                startActivity(intent);
+            }
+        });
 
         updates.setOnClickListener(new View.OnClickListener() {
             @Override

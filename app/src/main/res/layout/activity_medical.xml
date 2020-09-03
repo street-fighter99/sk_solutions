@@ -36,44 +36,46 @@
             android:layout_height="match_parent"
             android:rowCount="3"
             android:columnCount="2">
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="15dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:elevation="20dp"
-            android:focusable="true"
-            app:cardBackgroundColor="#F48FB1"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="20dp">
 
-            <TextView
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bloodbankcard"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/bangers"
-                android:text="blood bank"
-                android:layout_gravity="top|left"
-                android:textColor="#000"
-                android:textSize="20dp">
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#F48FB1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="20dp">
 
-            </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bangers"
+                    android:text="blood bank"
+                    android:textColor="#000"
+                    android:textSize="20dp">
 
-            <ImageView
+                </TextView>
 
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="bottom|right"
+                <ImageView
 
-                android:src="@drawable/blood">
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom|right"
 
-            </ImageView>
+                    android:src="@drawable/blood">
+
+                </ImageView>
 
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"

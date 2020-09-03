@@ -22,22 +22,90 @@
         app:layout_constraintVertical_bias="0.032" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="239dp"
-        android:layout_height="151dp"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="32dp"
-            android:src="@drawable/plusbutton"
-            android:backgroundTint="#4C0CE6"
-            android:background="#512DA8"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="77dp"
+            android:id="@+id/mainaction"
+            android:layout_height="78dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:backgroundTint="#673AB7"
+            android:src="@drawable/plusbutton"
+            app:fabSize="normal" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+
+        android:clickable="true"
+        android:src="@drawable/searchicon"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:clickable="true"
+        android:src="@drawable/plusbutton"
+        app:layout_constraintBottom_toTopOf="@+id/searchaction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <TextView
+        android:id="@+id/searchtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/fabbg"
+        android:fontFamily="@font/raleway_semibold"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="SEARCH"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/searchaction"
+        app:layout_constraintEnd_toStartOf="@+id/searchaction"
+        app:layout_constraintTop_toTopOf="@+id/searchaction" />
+
+    <TextView
+        android:id="@+id/adddatatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+
+        android:background="@drawable/fabbg"
+        android:fontFamily="@font/raleway_semibold"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text=" ADD DATA "
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/addaction"
+        app:layout_constraintEnd_toStartOf="@+id/addaction"
+        app:layout_constraintTop_toTopOf="@+id/addaction" />
 </androidx.constraintlayout.widget.ConstraintLayout>
