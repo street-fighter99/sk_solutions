@@ -20,7 +20,7 @@ public class mainhome extends AppCompatActivity implements NavigationView.OnNavi
 private DrawerLayout drawerLayout;
 private ActionBarDrawerToggle toggle;
 private NavigationView navigationView;
-CardView medical,notifi;
+CardView medical,notif;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ CardView medical,notifi;
         setContentView(R.layout.activity_mainhome);
 
         medical=findViewById(R.id.medical);
-        notifi=findViewById(R.id.notify);
+        notif=findViewById(R.id.notify);
 
         //id passing.....(navigation)
 

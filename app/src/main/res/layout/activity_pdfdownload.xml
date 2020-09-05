@@ -6,20 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".pdfdownload">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="360dp"
-        android:layout_height="109dp"
-        android:fontFamily="@font/bangers"
-        android:text="Blood Bank"
-        android:textColor="#E33278"
-        android:textSize="70dp"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="360dp"
+            android:layout_height="109dp"
+            android:fontFamily="@font/javatext"
+            android:gravity="center"
+            android:text="Blood Bank"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/backsign" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.02">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scrollbars="horizontal">
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="120dp">
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="80dp"
+               android:gravity="bottom">
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_margin="10dp"
+               app:cardElevation="20dp"
+               app:cardCornerRadius="20dp"
+
+               >
+
+
+           </androidx.cardview.widget.CardView>
+
+           </RelativeLayout>
+           </RelativeLayout>
+
+       </ScrollView>
+
+
+    </LinearLayout>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
