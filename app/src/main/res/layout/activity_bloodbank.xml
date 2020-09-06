@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bloodbank"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backsign"
+            android:padding="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Bank"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:fontFamily="@font/javatext"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+
+    </GridLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:columnCount="9"
+            android:rowCount="8"
+            >
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O+VE"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/javatext"
+                        android:textColor="#FF0202"
+                        android:gravity="center"
+                        android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O-VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB+VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB-VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B+VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B-VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A+VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A-VE"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#FF0202"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="more"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/javatext"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            </GridLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+    
+
+</LinearLayout>
